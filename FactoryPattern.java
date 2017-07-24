@@ -1,15 +1,15 @@
 package factorypattern;
 public class FactoryPattern {
     public static void main(String[] args) {
-        //Instanciando a classe factory
+        //Creating the factory object
         ShapeFactory shapeFactory = new ShapeFactory();
-        //Criando objeto circulo
+        //Creating circle object
         Shape circle = shapeFactory.getShape("Circle");
-        //Criando objeto retângulo
+        //Creating rectangle object
         Shape rectangle = shapeFactory.getShape("Rectangle");
-        //Chamando função draw do circulo
+        //Calling circle draw function
         circle.draw();
-        //Chamando função draw do retangulo
+        //alling rectangle draw function
         rectangle.draw();
     }
 }
